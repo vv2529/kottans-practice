@@ -1,0 +1,30 @@
+.section {
+	display: none;
+}
+
+.btn-go {
+	all: unset;
+	display: none;
+	margin-top: 50px;
+	padding: 10px 25px;
+	border: 1px solid #fff9;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+.btn-go::after {
+	content: '→';
+	margin-left: 10px;
+}
+.btn-go:hover {
+	border-color: #fffc;
+}
+.btn-go:focus,
+.btn-go:active {
+	border-color: #fff;
+}
+
+.shown {
+	display: block;
+}

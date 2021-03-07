@@ -4,31 +4,51 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Kottans practice</title>
-	<style>
-		html {
-			font: 20px/1.5em sans-serif;
-		}
-		a {
-			text-decoration: none;
-		}
-		a:hover, a:focus {
-			text-decoration: underline;
-		}
-	</style>
+	<link rel="stylesheet" href="js-dom/style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<p>Online part:</p>
-	<ul>
-		<li><a href="js-dom">Sidebar navigation (DOM API)</a></li>
-		<li><a href="a-tiny-js-world">A Tiny JS World (pre-OOP)</a></li>
-		<li><a href="frogger">Frogger game (OOP)</a></li>
-		<li><a href="a-tiny-js-world-oop">A Tiny JS World (post-OOP)</a></li>
-		<li><a href="memory-pair">Memory Pair game</a></li>
-		<li><a href="friends-app">Friends app</a></li>
-	</ul>
-	<p>Offline part:</p>
-	<ul>
-		<li><a href="popup-no-js">Popup menu (no JS)</a></li>
-	</ul>
+	<nav id="navbar" class="navbar">
+		<li class="menu-item home" data-id="home">Home</li>
+		<li class="menu-item" data-id="popup-no-js">Popup menu</li>
+		<li class="menu-item" data-id="friends-app">Friends app</li>
+		<li class="menu-item" data-id="memory-pair">Memory Pair game</li>
+		<li class="menu-item" data-id="a-tiny-js-world-oop">Post-OOP</li>
+		<li class="menu-item" data-id="frogger">Frogger Game</li>
+		<li class="menu-item" data-id="a-tiny-js-world">Pre-OOP</li>
+		<li class="menu-item" data-id="js-dom">DOM API task</li>
+	</nav>
+	<main id="main">
+		<h1 id="page-title">Home</h1>
+		<section class="section shown" id="home">
+			<p>
+				This is my collection of projects created as a part of the Kottans frontend course 2019: <a href="http://github.com/kottans/frontend">http://github.com/kottans/frontend</a>.
+			</p>
+		</section>
+		<section class="section" id="popup-no-js">
+			<p>Recreation of Google's pop-up menu without any JS.</p>
+		</section>
+		<section class="section" id="friends-app">
+			<p>An application that uses the <a href="http://randomuser.me">Random User API</a> and displays user profiles, which then can be sorted and filtered.</p>
+		</section>
+		<section class="section" id="memory-pair">
+			<p>A simple game.</p>
+		</section>
+		<section class="section" id="a-tiny-js-world-oop">
+			<p>An exercise to solidify the understanding of OOP in JS.</p>
+		</section>
+		<section class="section" id="frogger">
+			<p>The Frogger game, built on the prototype-based OOP.</p>
+		</section>
+		<section class="section" id="a-tiny-js-world">
+			<p>A world of objects, where classes do not exist yet.</p>
+		</section>
+		<section class="section" id="js-dom">
+			<p>A page which fetches its content from JSON files. The look of it might be a bit familiar ;)</p>
+		</section>
+		<button class="btn-go" id="btn-go">Go</button>
+	</main>
+	<button id="navbar-toggle">☰</button>
+	<script src="script.js"></script>
 </body>
 </html>
